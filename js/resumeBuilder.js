@@ -20,20 +20,20 @@ var bio = {
 var education = {
   "schools": [
     {
-      "name": "",
-      "city": "Portland, OR",
-      "degree": "",
-      "majors": "",
-      "dates": "",
-      "url": ""
+      "name": "cc",
+      "location": "Portland, OR",
+      "degree": "cc",
+      "major": "cc",
+      "dates": "ccc",
+      "url": "http://www.example.com"
     },
     {
-      "name": "",
-      "city": "Portland, OR",
-      "degree": "",
-      "majors": "",
-      "dates": "",
-      "url": ""
+      "name": "ee",
+      "location": "Portland, OR",
+      "degree": "ee",
+      "major": "eee",
+      "dates": "eee",
+      "url": "http://www.example.com"
     }
   ],
   "onlineCourses": [
@@ -117,11 +117,19 @@ bio.display = function() {
   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 
+  // add to the header
   $("#topContacts").prepend(formattedMobile);
   $("#topContacts").prepend(formattedEmail);
   $("#topContacts").prepend(formattedLocation);
   $("#topContacts").prepend(formattedGithub);
   $("#topContacts").prepend(formattedTwitter);
+
+  // add to the footer
+  $("#footerContacts").prepend(formattedMobile);
+  $("#footerContacts").prepend(formattedEmail);
+  $("#footerContacts").prepend(formattedLocation);
+  $("#footerContacts").prepend(formattedGithub);
+  $("#footerContacts").prepend(formattedTwitter);
 
   // Add picture and welcome message
   var formattedBiopic = HTMLbioPic.replace("%data%", bio.biopic);
@@ -185,12 +193,33 @@ projects.display = function() {
   }
 }
 
-
-
 // Add information to Education *********************************
+education.display = function() {
+  for(var school in education.schools) {
+    $("#education").append(HTMLschoolStart);
+
+    var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+    formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url);
+
+    var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+    var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+    var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+    var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+
+    var schoolNameDegree = formattedSchoolName + formattedSchoolDegree;
+
+    $(".education-entry:last").append(schoolNameDegree);
+    $(".education-entry:last").append(formattedSchoolDates);
+    $(".education-entry:last").append(formattedSchoolLocation);
+    $(".education-entry:last").append(formattedSchoolMajor);
+  }
+}
+
+
 // Turn on Google Map *******************************************
 
 // Call all display functions ***********************************
 bio.display();
 work.display();
 projects.display();
+education.display();
