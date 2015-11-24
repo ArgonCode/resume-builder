@@ -143,20 +143,41 @@ bio.display = function() {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Add infomation to Work Experiance ****************************
+work.display = function() {
+  for(var job in work.jobs) {
+    $("#workExperience").append(HTMLworkStart);
+
+    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+    var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+    var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+    var employerTitle = formattedEmployer + formattedTitle;
+
+    $(".work-entry:last").append(employerTitle);
+    $(".work-entry:last").append(formattedDates);
+    $(".work-entry:last").append(formattedLocation);
+    $(".work-entry:last").append(formattedDescription);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Add information to Projects **********************************
 // Add information to Education *********************************
 // Turn on Google Map *******************************************
 bio.display();
+work.display();
