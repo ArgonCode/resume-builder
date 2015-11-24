@@ -163,21 +163,34 @@ work.display = function() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Add information to Projects **********************************
+projects.display = function() {
+  for(var project in projects.projects) {
+    $("#projects").append(HTMLprojectStart);
+
+    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+    var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+    
+    $(".project-entry:last").append(formattedTitle);
+    $(".project-entry:last").append(formattedDates);
+    $(".project-entry:last").append(formattedDescription);
+    
+    if(projects.projects[project].images.length > 0) {
+      for(image in projects.projects[project].images) {
+        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+        $(".project-entry:last").append(formattedImage);
+      }
+    }
+  }
+}
+
+
+
 // Add information to Education *********************************
 // Turn on Google Map *******************************************
+
+// Call all display functions ***********************************
 bio.display();
 work.display();
+projects.display();
