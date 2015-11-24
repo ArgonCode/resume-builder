@@ -151,8 +151,10 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
-  width: 200px;
+  padding: 0 10px 10px 10px;
+
+  max-width: 180px;
+  max-height: 180px;
   display: none;
 }
 
