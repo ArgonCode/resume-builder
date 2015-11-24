@@ -38,22 +38,22 @@ var education = {
   ],
   "onlineCourses": [
     {
-      "title": "",
-      "school": "",
-      "dates": ",",
-      "url": ""
+      "title": "sdgasg",
+      "school": "dfahsdjj",
+      "dates": "46364346",
+      "url": "http://www.example.com"
     },
     {
-      "title": "",
-      "school": "",
-      "dates": ",",
-      "url": ""
+      "title": "ghhfhfghfhf",
+      "school": "hdhdhdhdfghgh",
+      "dates": ",57555555555555",
+      "url": "http://www.example.com"
     },
     {
-      "title": "",
-      "school": "",
-      "dates": ",",
-      "url": ""
+      "title": "ghhhhhhhhhhhh",
+      "school": "ghhhhhhhhhhhh",
+      "dates": "47777777777777",
+      "url": "http://www.example.com"
     }
   ]
 };
@@ -194,8 +194,10 @@ projects.display = function() {
 }
 
 // Add information to Education *********************************
-education.display = function() {
+education.displaySchools = function() {
   for(var school in education.schools) {
+    // Add 
+
     $("#education").append(HTMLschoolStart);
 
     var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
@@ -214,6 +216,24 @@ education.display = function() {
     $(".education-entry:last").append(formattedSchoolMajor);
   }
 }
+education.displayCourses = function() {
+  $("#education").append(HTMLonlineClasses);
+  
+  for(var course in education.onlineCourses) {
+    $("#education").append(HTMLschoolStart);
+    var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+    formattedOnlineTitle = formattedOnlineTitle.replace("#", education.onlineCourses[course].url);
+    
+    var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+    var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+
+    var onlineTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
+  
+    $(".education-entry:last").append(onlineTitleSchool);
+    $(".education-entry:last").append(formattedOnlineDates);
+  }
+}
+
 
 
 // Turn on Google Map *******************************************
@@ -222,4 +242,5 @@ education.display = function() {
 bio.display();
 work.display();
 projects.display();
-education.display();
+education.displaySchools();
+education.displayCourses();
