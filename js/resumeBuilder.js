@@ -5,7 +5,7 @@ var bio = {
         "mobile": "555-555-5555",
         "twitter": "@argoncode",
         "github": "argoncode",
-        "location": "Portland, OR",
+        "location": "Vancouver, WA",
         "facebook": "",
         "googlePlus": "",
         "linkedin": "",
@@ -29,7 +29,7 @@ var education = {
     },
     {
       "name": "ee",
-      "location": "Portland, OR",
+      "location": "Bend, OR",
       "degree": "ee",
       "major": "eee",
       "dates": "eee",
@@ -65,14 +65,14 @@ var work = {
       "title": "Title",
       "dates": "2000-2010",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "location": "Portland, OR"
+      "location": "Turku, Finland"
     },
     {
       "employer": "Employer",
       "title": "Title",
       "dates": "2000-2010",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "location": "Portland, OR"
+      "location": "Poznan, Poland"
     },
     {
       "employer": "Employer",
@@ -244,3 +244,5 @@ work.display();
 projects.display();
 education.displaySchools();
 education.displayCourses();
+
+$("#mapDiv").append(googleMap);
