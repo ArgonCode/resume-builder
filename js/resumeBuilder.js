@@ -1,106 +1,3 @@
-var bio = {
-    "name": "Sylwia Bialczak",
-    "role": "Web Developer",
-    "contacts": {
-        "mobile": "555-555-5555",
-        "twitter": "@argoncode",
-        "github": "argoncode",
-        "location": "Vancouver, WA",
-        "facebook": "",
-        "googlePlus": "",
-        "linkedin": "",
-        "email": "argoncode18@gmail.com",
-        "kaybase": ""
-    },
-    "biopic": "images/sylwia.jpeg",
-    "welcomeMessage": "This is welcome message that gets displayed",
-    "skills": ["one", "two"]
-};
-
-var education = {
-  "schools": [
-    {
-      "name": "cc",
-      "location": "Portland, OR",
-      "degree": "cc",
-      "major": "cc",
-      "dates": "ccc",
-      "url": "http://www.example.com"
-    },
-    {
-      "name": "ee",
-      "location": "Bend, OR",
-      "degree": "ee",
-      "major": "eee",
-      "dates": "eee",
-      "url": "http://www.example.com"
-    }
-  ],
-  "onlineCourses": [
-    {
-      "title": "sdgasg",
-      "school": "dfahsdjj",
-      "dates": "46364346",
-      "url": "http://www.example.com"
-    },
-    {
-      "title": "ghhfhfghfhf",
-      "school": "hdhdhdhdfghgh",
-      "dates": ",57555555555555",
-      "url": "http://www.example.com"
-    },
-    {
-      "title": "ghhhhhhhhhhhh",
-      "school": "ghhhhhhhhhhhh",
-      "dates": "47777777777777",
-      "url": "http://www.example.com"
-    }
-  ]
-};
-
-var work = {
-  "jobs": [
-    {
-      "employer": "Employer",
-      "title": "Title",
-      "dates": "2000-2010",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "location": "Turku, Finland"
-    },
-    {
-      "employer": "Employer",
-      "title": "Title",
-      "dates": "2000-2010",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "location": "Poznan, Poland"
-    },
-    {
-      "employer": "Employer",
-      "title": "Title",
-      "dates": "2000-2010",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "location": "Portland, OR"
-    }
-  ]
-};
-
-var projects = {
-  "projects": [
-    {
-      "title": "ddd",
-      "dates": "ssss",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "images": ["https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png", "https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png"]
-    },
-    {
-      "title": "sss",
-      "dates": "sss",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
-      "images": ["https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png", "https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png"]
-    }
-  ]
-};
-
 // Add information to Bio ***************************************
 bio.display = function() {
   // Add Name and Role 
@@ -193,56 +90,58 @@ projects.display = function() {
   }
 }
 
+
 // Add information to Education *********************************
-education.displaySchools = function() {
-  for(var school in education.schools) {
-    // Add 
+education.display = function() {
+  // Conventional education
+  if (education.schools.length >0) {
+    for(var school in education.schools) {
+      $("#education").append(HTMLschoolStart);
 
-    $("#education").append(HTMLschoolStart);
+      var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+      formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url);
 
-    var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-    formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url);
+      var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+      var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+      var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+      var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 
-    var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-    var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-    var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-    var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+      var schoolNameDegree = formattedSchoolName + formattedSchoolDegree;
 
-    var schoolNameDegree = formattedSchoolName + formattedSchoolDegree;
-
-    $(".education-entry:last").append(schoolNameDegree);
-    $(".education-entry:last").append(formattedSchoolDates);
-    $(".education-entry:last").append(formattedSchoolLocation);
-    $(".education-entry:last").append(formattedSchoolMajor);
+      $(".education-entry:last").append(schoolNameDegree);
+      $(".education-entry:last").append(formattedSchoolDates);
+      $(".education-entry:last").append(formattedSchoolLocation);
+      $(".education-entry:last").append(formattedSchoolMajor);
+    }
   }
-}
-education.displayCourses = function() {
-  $("#education").append(HTMLonlineClasses);
-  
-  for(var course in education.onlineCourses) {
-    $("#education").append(HTMLschoolStart);
-    var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
-    formattedOnlineTitle = formattedOnlineTitle.replace("#", education.onlineCourses[course].url);
+
+  // Online courses
+  if (education.onlineCourses.length >0) {
+    $("#education").append(HTMLonlineClasses);
     
-    var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-    var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+    for(var course in education.onlineCourses) {
+      $("#education").append(HTMLschoolStart);
+      var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+      formattedOnlineTitle = formattedOnlineTitle.replace("#", education.onlineCourses[course].url);
+      
+      var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+      var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 
-    var onlineTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
-  
-    $(".education-entry:last").append(onlineTitleSchool);
-    $(".education-entry:last").append(formattedOnlineDates);
+      var onlineTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
+    
+      $(".education-entry:last").append(onlineTitleSchool);
+      $(".education-entry:last").append(formattedOnlineDates);
+    }
   }
 }
-
 
 
 // Turn on Google Map *******************************************
-
-// Call all display functions ***********************************
-bio.display();
-work.display();
-projects.display();
-education.displaySchools();
-education.displayCourses();
-
 $("#mapDiv").append(googleMap);
+
+
+// Call all display functions in any order **********************
+projects.display();
+work.display();
+education.display();
+bio.display();
