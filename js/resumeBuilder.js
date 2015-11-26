@@ -1,6 +1,6 @@
 // Add information to Bio ***************************************
 bio.display = function() {
-  // Add Name and Role 
+  // Add Name and Role
   var formattedName = HTMLheaderName.replace("%data%", bio.name);
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
@@ -40,7 +40,7 @@ bio.display = function() {
 
   // and populate skills
   if(bio.skills.length > 0) {
-    for(skill in bio.skills) {
+    for(var skill=0; skill < bio.skills.length; skill++) {
       var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
       $("#skills").prepend(formattedSkill);
     }
@@ -70,17 +70,17 @@ work.display = function() {
 
 // Add information to Projects **********************************
 projects.display = function() {
-  for(var project in projects.projects) {
+  for(var project = 0; project < projects.projects.length; project++) {
     $("#projects").append(HTMLprojectStart);
 
     var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
     var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
     var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-    
+
     $(".project-entry:last").append(formattedTitle);
     $(".project-entry:last").append(formattedDates);
     $(".project-entry:last").append(formattedDescription);
-    
+
     if(projects.projects[project].images.length > 0) {
       for(image in projects.projects[project].images) {
         var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
@@ -95,7 +95,7 @@ projects.display = function() {
 education.display = function() {
   // Conventional education
   if (education.schools.length >0) {
-    for(var school in education.schools) {
+    for(var school = 0; school < education.schools.length; school++) {
       $("#education").append(HTMLschoolStart);
 
       var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
@@ -118,17 +118,17 @@ education.display = function() {
   // Online courses
   if (education.onlineCourses.length >0) {
     $("#education").append(HTMLonlineClasses);
-    
-    for(var course in education.onlineCourses) {
+
+    for(var course = 0; course < education.onlineCourses.length; course++) {
       $("#education").append(HTMLschoolStart);
       var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
       formattedOnlineTitle = formattedOnlineTitle.replace("#", education.onlineCourses[course].url);
-      
+
       var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
       var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 
       var onlineTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
-    
+
       $(".education-entry:last").append(onlineTitleSchool);
       $(".education-entry:last").append(formattedOnlineDates);
     }
@@ -145,3 +145,8 @@ projects.display();
 work.display();
 education.display();
 bio.display();
+
+// Log user clicks **********************************************
+$(document).click(function(loc) {
+  console.log(logClicks(loc.pageX, loc.pageY));
+});
