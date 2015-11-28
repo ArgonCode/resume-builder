@@ -38,3 +38,9 @@ main {
 #welcome {
   padding-top: 7px;
 }
+
+
+.noPadding {
+  padding: 0;
+  margin: 0;
+}

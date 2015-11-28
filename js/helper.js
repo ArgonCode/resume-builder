@@ -21,12 +21,12 @@ var HTMLworkEmployer = '<div class="col s6 left-align"><a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
 var HTMLworkDates = '<div class="col s12">%data%</div>';
 var HTMLworkLocation = '<div class="col s6 right-align">%data%</div>';
-var HTMLworkDescription = '<div class="col s12">%data%</div>';
+var HTMLworkDescription = '<div class="col s12"><p>%data%</p></div>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectStart = '<div class="row"><div class="col s12 project-entry"></div></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectDates = '<p>%data%</p>';
+var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
