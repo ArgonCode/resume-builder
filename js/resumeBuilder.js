@@ -60,8 +60,8 @@ work.display = function() {
     var employerTitle = formattedEmployer + formattedTitle;
 
     $(".work-entry:last").append(employerTitle);
-    $(".work-entry:last").append(formattedDates);
     $(".work-entry:last").append(formattedLocation);
+    $(".work-entry:last").append(formattedDates);
     $(".work-entry:last").append(formattedDescription);
   }
 }
@@ -141,7 +141,7 @@ education.display = function() {
 
 // Call all display functions in any order **********************
 // projects.display();
-// work.display();
+work.display();
 // education.display();
 bio.display();
 

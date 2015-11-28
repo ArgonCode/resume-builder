@@ -17,6 +17,11 @@ TODO features:
 
 ### Notes on sections:
 - Skills at a Glance, move to a list with comas, like a list of tools
+- Add links to Work description
+- ? Add navbar with links to section
+- add class for ttle of sections, h4, top margin 0
+- less space between panels
+- remove unused classes and IDs
 
 ### v1
 1. Create more realistic sections, use JSON and Linkedin for inspiration
