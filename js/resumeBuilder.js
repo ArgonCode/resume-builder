@@ -1,11 +1,17 @@
 // Add information to Bio ***************************************
 bio.display = function() {
+  // Add picture
+  var formattedBiopic = HTMLbioPic.replace("%data%", bio.biopic);
+  $("#image").append(formattedBiopic);
+
   // Add Name and Role
   var formattedName = HTMLheaderName.replace("%data%", bio.name);
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+  var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
   $("#header").prepend(formattedRole);
   $("#header").prepend(formattedName);
+  $("#welcome").append(formattedWelcomeMessage);
 
   // Add contact details
   var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
@@ -14,35 +20,28 @@ bio.display = function() {
   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 
-  // add to the header
+  // add contact details to the header
   $("#topContacts").prepend(formattedMobile);
   $("#topContacts").prepend(formattedEmail);
   $("#topContacts").prepend(formattedLocation);
   $("#topContacts").prepend(formattedGithub);
   $("#topContacts").prepend(formattedTwitter);
 
-  // add to the footer
+  // add contact details to the footer
   $("#footerContacts").prepend(formattedMobile);
   $("#footerContacts").prepend(formattedEmail);
   $("#footerContacts").prepend(formattedLocation);
   $("#footerContacts").prepend(formattedGithub);
   $("#footerContacts").prepend(formattedTwitter);
 
-  // Add picture and welcome message
-  var formattedBiopic = HTMLbioPic.replace("%data%", bio.biopic);
-  var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-
-  $("#header").append(formattedBiopic);
-  $("#header").append(formattedWelcomeMessage);
-
   // Add skills list tags
-  $("#header").append(HTMLskillsStart);
+  $("#skill-list").append(HTMLskillsStart);
 
   // and populate skills
   if(bio.skills.length > 0) {
     for(var skill=0; skill < bio.skills.length; skill++) {
       var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
-      $("#skills").prepend(formattedSkill);
+      $("#skills").append(formattedSkill);
     }
   }
 };
@@ -137,13 +136,13 @@ education.display = function() {
 
 
 // Turn on Google Map *******************************************
-$("#mapDiv").append(googleMap);
+// $("#mapDiv").append(googleMap);
 
 
 // Call all display functions in any order **********************
-projects.display();
-work.display();
-education.display();
+// projects.display();
+// work.display();
+// education.display();
 bio.display();
 
 // Log user clicks **********************************************

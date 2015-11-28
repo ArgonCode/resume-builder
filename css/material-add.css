@@ -1,0 +1,40 @@
+#name {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+body {
+  background: lightgrey;
+}
+
+
+#hr-header {
+  /* TODO: use materialize color code */
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(111, 100, 50, 0), rgba(111, 100, 50, 0.75), rgba(111, 100, 50, 0));
+}
+
+
+/* Contact links */
+#topContacts li, #footerContacts li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+/* Sticky Footer */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#welcome {
+  padding-top: 7px;
+}

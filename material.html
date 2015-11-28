@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Material</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="materialize-src/css/materialize.css">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link href="css/material-add.css" rel="stylesheet">
+
+  <!-- scripts -->
+  <script src="js/jQuery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <style type="text/css">
+  #header {
+    display: inline-block;
+  }
+
+  </style>
+</head>
+<body>
+<header></header>
+
+  <main id="main" class="container">
+    <!-- BIO DATA-->
+    <div class="row">
+      <div class="col s2 center">
+        <div class="card-panel">
+          <div class="card-image" id="image">
+            <!-- RB: image -->
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s10 center">
+        <div class="col s12">
+          <div class="card-panel">
+            <div id="header">
+              <!-- RB: name -->
+              <!-- RB: position -->
+              <ul id="topContacts" class="center">
+                <!-- RB: contact details -->
+              </ul>
+              <hr/>
+              <div class="row">
+                <div class="col s5 left-align" id="skill-list">
+                  <!-- RB: welcome message -->
+                </div>
+                <div class="col s7 right-align" id="welcome">
+                  <!-- RB: list of skills -->
+                </div>
+              </div>
+            </div><!-- /.header -->
+          </div><!-- /.card-panel -->
+        </div><!-- /.col -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+
+    <div style="clear: both;"></div>
+    <div id="workExperience" class="gray">
+      <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+    <div id="education" class="gray">
+      <h2>Education</h2>
+    </div>
+    <div id="mapDiv">
+      <h2>Where I've Lived and Worked</h2>
+    </div>
+  </main>
+
+  <div class="container">
+    <footer id="lets-connect" class="card-panel">
+      <ul id="footerContacts" class="center">
+      </ul>
+    </footer>
+  </div>
+
+  <script src="js/resumeData.js"></script>
+  <script src="js/resumeBuilder.js"></script>
+  <script type="text/javascript">
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h2').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

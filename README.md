@@ -1,5 +1,6 @@
 TODO features:
 
+### v0
 1. Change design of the website = use materialize
   * design how you want it to look
   * create wireframe
@@ -12,4 +13,12 @@ TODO features:
 5. Customize info window
 6. Make contact data clickable
 7. Get layout with columns
+8. Link to gist JSON file and use it to populate the website on the fly. With a few diff examples.
+
+### Notes on sections:
+- Skills at a Glance, move to a list with comas, like a list of tools
+
+### v1
+1. Create more realistic sections, use JSON and Linkedin for inspiration
+2. Include bullet points and descriptions, use JSON resume for inspiration
 
