@@ -13,11 +13,11 @@ TODO features:
 5. Customize info window
 6. Make contact data clickable
 7. Get layout with columns
+  * disappear side photos on small screen
 8. Link to gist JSON file and use it to populate the website on the fly. With a few diff examples.
-9. FIX columns and rows in work entry.
-  * rozpisz je jak maja wygladac, i po kawalku wklej jedno za drugim do placeholders.
+9. [x]. FIX columns and rows in work entry.
+  * [x] rozpisz je jak maja wygladac, i po kawalku wklej jedno za drugim do placeholders.
 10. project URL does not go anywhere.
-11.
 
 ### Notes on sections:
 - Skills at a Glance, move to a list with comas, like a list of tools

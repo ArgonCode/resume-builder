@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Material</title>
 
   <!-- styles -->
@@ -34,31 +34,33 @@
       </div><!-- /.col -->
 
       <div class="col s10 center">
-        <div class="col s12">
-          <div class="card-panel">
-            <div id="header">
-              <!-- RB: name -->
-              <!-- RB: position -->
-              <ul id="topContacts" class="center">
-                <!-- RB: contact details -->
-              </ul>
-              <hr/>
-              <div class="row">
-                <div class="col s5 left-align" id="skill-list">
-                  <!-- RB: welcome message -->
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <div id="header">
+                <!-- RB: name -->
+                <!-- RB: position -->
+                <ul id="topContacts" class="center">
+                  <!-- RB: contact details -->
+                </ul>
+                <hr/>
+                <div class="row">
+                  <div class="col s5 left-align" id="skill-list">
+                    <!-- RB: welcome message -->
+                  </div>
+                  <div class="col s7 right-align" id="welcome">
+                    <!-- RB: list of skills -->
+                  </div>
                 </div>
-                <div class="col s7 right-align" id="welcome">
-                  <!-- RB: list of skills -->
-                </div>
-              </div>
-            </div><!-- /.header -->
-          </div><!-- /.card-panel -->
-        </div><!-- /.col -->
-      </div><!-- /.col -->
+              </div><!-- /.header -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12-->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 center-->
     </div><!-- /.row -->
 
 <!--################################### WORK  ##############################-->
-<div class="row">
+    <div class="row" id="work-section">
       <div class="col s2">
         <div class="card-panel">
           <div class="card-image">
@@ -68,62 +70,22 @@
       </div><!-- /.col -->
 
       <div class="col s10">
-        <div class="col s12">
-          <div class="card-panel">
-            <div id="workExperience">
-            <h4>Work Experience:</h4>
-              <!--  6col div with Emplyer - Title -->
-              <!--  6col div with Location -->
-              <!-- 12col div with Dates -->
-              <!-- 12col div with Description -->
-            <div class="row noPadding">
-              <div class="col s6 left-align">
-                <a href="#">Employer - Title</a>
-              </div>
-              <div class="col s6 right-align">
-                Turku, Finland
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12">
-                <p class="noPadding">2000-2010</p>
-
-                <p class="noPadding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar.
-                </p>
-              </div>
-            </div>
-            </div>
-
-          </div><!-- /.card-panel -->
-        </div><!-- /.col -->
-      </div><!-- /.col -->
-    </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Work Experience:</h4>
+              <div id="workExperiance">
+                <!--  6col div with Emplyer - Title -->
+                <!--  6col div with Location - Dates -->
+                <!-- 12col div with Description -->
+              </div><!-- /.workExperiance -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12 -->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 -->
+    </div><!--/.row #work-section -->
 
 
-
-    <div class="row">
-      <div class="col s2">
-        <div class="card-panel">
-          <div class="card-image">
-            TODO: work icon
-          </div>
-        </div><!-- /.card-panel -->
-      </div><!-- /.col -->
-
-      <div class="col s10">
-        <div class="col s12">
-          <div class="card-panel">
-            <div id="workExperience">
-            <h4>Work Experience:</h4>
-              <!--  6col div with Emplyer - Title -->
-              <!--  6col div with Location -->
-              <!-- 12col div with Dates -->
-              <!-- 12col div with Description -->
-            </div><!-- /.workExperience -->
-          </div><!-- /.card-panel -->
-        </div><!-- /.col -->
-      </div><!-- /.col -->
-    </div><!-- /.row -->
 <!--################################### PROJECTS ###########################-->
     <div class="row">
       <div class="col s2">
@@ -193,9 +155,9 @@
     if(document.getElementsByTagName('h2').length === 0) {
       document.getElementById('header').style.display = 'none';
     }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
+    // if(document.getElementsByClassName('work-entry').length === 0) {
+    //   document.getElementById('work-section').style.display = 'none';
+    // }
     if(document.getElementsByClassName('project-entry').length === 0) {
       document.getElementById('projects').style.display = 'none';
     }
