@@ -73,16 +73,30 @@ projects.display = function() {
 
     var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
     var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-    var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+    var formattedTitleDates = formattedTitle + formattedDates;
 
-    $(".project-entry:last").append(formattedTitle);
-    $(".project-entry:last").append(formattedDates);
+    // Add title to description
+    var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].title);
+    // and the actual description
+    formattedDescription = formattedDescription.replace("%data%", projects.projects[project].description);
+
+    var formattedSource = HTMLprojectSource.replace("%data%", projects.projects[project].source);
+    var formattedDemo = HTMLprojectDemo.replace("%data%", projects.projects[project].demo);
+    var formattedSourceDemo = formattedSource + formattedDemo;
+
+    // Main image
+    var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[0]);
+
+    $(".project-entry:last").append(formattedImage);
+    $(".project-entry:last").append(formattedTitleDates);
+    $(".project-entry:last").append(formattedSourceDemo);
     $(".project-entry:last").append(formattedDescription);
 
+    // thumbnails
     if(projects.projects[project].images.length > 0) {
-      for(image in projects.projects[project].images) {
-        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-        $(".project-entry:last").append(formattedImage);
+      for(var image = 1; image < projects.projects[project].images.length; image++) {
+        var formattedThumbnail = HTMLprojectThumbnails.replace("%data%", projects.projects[project].images[image]);
+        $(".card-reveal:last").append(formattedThumbnail);
       }
     }
   }
@@ -139,7 +153,7 @@ education.display = function() {
 
 
 // Call all display functions in any order **********************
-// projects.display();
+projects.display();
 work.display();
 // education.display();
 bio.display();

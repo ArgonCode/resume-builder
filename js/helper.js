@@ -23,11 +23,22 @@ var HTMLworkLocation = '<div class="col s6 right-align"><p class="no-padding">%d
 var HTMLworkDates = '<div class="row"><div class="col s12"><p class="no-padding">%data%</p>';
 var HTMLworkDescription = '<p class="no-padding">%data%</p></div></div>';
 
-var HTMLprojectStart = '<div class="row"><div class="col s12 project-entry"></div></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<p>%data%</p>';
-var HTMLprojectDescription = '<p>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectStart = '<div class="card hoverable medium-width project-entry"></div>';
+var HTMLprojectTitle = '<div class="card-content"><p class="card-title activator grey-text text-darken-4">%data%';
+var HTMLprojectDates = '<i class="date">%data%</i><i class="material-icons right">more_vert</i></p></div>';
+var HTMLprojectDescription = '<div class="card-reveal"><p class="card-title grey-text text-darken-4 no-padding">%data%<i class="material-icons right">close</i></p><p>%data%</p></div>';
+var HTMLprojectImage = '<div class="card-image waves-effect waves-block waves-light"><img class="activator responsive-img" src="%data%"></div>';
+var HTMLprojectSource = '<div class="card-action"><a href="%data%">Source Code</a>';
+var HTMLprojectDemo = '<a href="%data%">Demo</a></div>';
+var HTMLprojectThumbnails = '<img class="thumbnails" src="%data%">'
+
+
+
+
+
+
+
+
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';

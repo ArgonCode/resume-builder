@@ -18,6 +18,7 @@ TODO features:
 9. [x]. FIX columns and rows in work entry.
   * [x] rozpisz je jak maja wygladac, i po kawalku wklej jedno za drugim do placeholders.
 10. project URL does not go anywhere.
+11. Clean up rules in javascript for hiding sections
 
 ### Notes on sections:
 - Skills at a Glance, move to a list with comas, like a list of tools

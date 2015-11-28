@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="materialize-src/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link href="css/style.css" rel="stylesheet"> -->
   <link href="css/material-add.css" rel="stylesheet">
 
@@ -87,7 +88,7 @@
 
 
 <!--################################### PROJECTS ###########################-->
-    <div class="row">
+    <div class="row" id="projects-section">
       <div class="col s2">
         <div class="card-panel">
           <div class="card-image">
@@ -101,36 +102,23 @@
           <div class="col s12">
             <div class="card-panel">
               <h4>Projects:</h4>
-                <div class="row">
-                  <div class="col s12 project-entry">
-                    <h5>Title</h5>
-                    <h6>2010-2010</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.</p>
-                    <img src="https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png">
-                  </div>
-                </div>
+              <div class="row">
+                <div id="projects" class="col s12 center">
+                  <!-- project-entry /card -->
+                  <!-- main image /card-image -->
+                  <!-- title /card-content -->
+                  <!-- links /card-action -->
+                  <!-- project title /card-reveal -->
+                  <!-- project description /card-reveal -->
+                    <!-- additional images as thumbnails -->
+                </div><!-- /.col s12 project-entry center-->
+              </div><!-- /.row -->
             </div><!-- /.card-panel -->
-          </div><!-- /.col -->
-        </div>
-      </div><!-- /.col -->
+          </div><!-- /.col s12-->
+        </div><!-- /.row -->
+      </div><!-- /.col s10-->
     </div><!-- /.row -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--################################### EDUCATION ###########################-->
     <div id="education" class="gray">
       <h2>Education</h2>
     </div>
@@ -155,11 +143,11 @@
     if(document.getElementsByTagName('h2').length === 0) {
       document.getElementById('header').style.display = 'none';
     }
-    // if(document.getElementsByClassName('work-entry').length === 0) {
-    //   document.getElementById('work-section').style.display = 'none';
-    // }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('work-section').style.display = 'none';
+    }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects-section').style.display = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
       document.getElementById('education').style.display = 'none';
