@@ -20,11 +20,11 @@ var bio = {
 var education = {
   "schools": [
     {
-      "name": "cc",
+      "name": "School Name",
       "location": "Portland, OR",
-      "degree": "cc",
-      "major": "cc",
-      "dates": "ccc",
+      "degree": "degree",
+      "major": "major",
+      "dates": "2000-10002",
       "url": "http://www.example.com"
     },
     {
@@ -38,21 +38,21 @@ var education = {
   ],
   "onlineCourses": [
     {
-      "title": "sdgasg",
-      "school": "dfahsdjj",
-      "dates": "46364346",
+      "title": "Title One",
+      "school": "School 1",
+      "dates": "Dates 20-20-02-02",
       "url": "http://www.example.com"
     },
     {
-      "title": "ghhfhfghfhf",
-      "school": "hdhdhdhdfghgh",
-      "dates": ",57555555555555",
+      "title": "Title Three",
+      "school": "School 1",
+      "dates": "Dates 20-20-02-02",
       "url": "http://www.example.com"
     },
     {
-      "title": "ghhhhhhhhhhhh",
-      "school": "ghhhhhhhhhhhh",
-      "dates": "47777777777777",
+      "title": "Title Four",
+      "school": "School 1",
+      "dates": "Dates 20-20-02-02",
       "url": "http://www.example.com"
     }
   ]
@@ -86,6 +86,14 @@ var work = {
 
 var projects = {
   "projects": [
+    {
+      "title": "ddd",
+      "dates": " 2000-2010", // empty string when no dates or format adding space in front of it " 2000-2010" or anyway preffered, it is appended after project title
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
+      "images": ["https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png", "https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png", "https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png", "https://dl.dropboxusercontent.com/u/633848/Udacity-forum/truthy%20falsy%20js2.png"], // the first image is the main image, other images are added to card info. If there is only one additional photo and not much text, changing thumbnail class might make it look better
+      "source": "link",
+      "demo": "link"
+    },
     {
       "title": "ddd",
       "dates": " 2000-2010", // empty string when no dates or format adding space in front of it " 2000-2010" or anyway preffered, it is appended after project title

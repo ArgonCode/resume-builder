@@ -26,7 +26,7 @@
   <main id="main" class="container">
 <!--################################### BIO DATA ###########################-->
     <div class="row">
-      <div class="col s2 center">
+      <div class="col hide-on-small-only m2 center">
         <div class="card-panel">
           <div class="card-image" id="image">
             <!-- RB: image -->
@@ -34,7 +34,7 @@
         </div><!-- /.card-panel -->
       </div><!-- /.col -->
 
-      <div class="col s10 center">
+      <div class="col s12 m10 center">
         <div class="row">
           <div class="col s12">
             <div class="card-panel">
@@ -62,15 +62,15 @@
 
 <!--################################### WORK  ##############################-->
     <div class="row" id="work-section">
-      <div class="col s2">
+      <div class="col hide-on-small-only m2 center">
         <div class="card-panel">
           <div class="card-image">
-            TODO: work icon
+            <i class="material-icons medium">work</i>
           </div>
         </div><!-- /.card-panel -->
       </div><!-- /.col -->
 
-      <div class="col s10">
+      <div class="col s12 m10">
         <div class="row">
           <div class="col s12">
             <div class="card-panel">
@@ -79,7 +79,7 @@
                 <!--  6col div with Emplyer - Title -->
                 <!--  6col div with Location - Dates -->
                 <!-- 12col div with Description -->
-              </div><!-- /.workExperiance -->
+              </div><!-- /#workExperiance -->
             </div><!-- /.card-panel -->
           </div><!-- /.col s12 -->
         </div><!-- /.row -->
@@ -89,25 +89,25 @@
 
 <!--################################### PROJECTS ###########################-->
     <div class="row" id="projects-section">
-      <div class="col s2">
+      <div class="col hide-on-small-only m2 center">
         <div class="card-panel">
           <div class="card-image">
-            TODO: projects icon
+            <i class="material-icons medium">format_align_left</i>
           </div>
         </div><!-- /.card-panel -->
       </div><!-- /.col -->
 
-      <div class="col s10">
+      <div class="col s12 m10">
         <div class="row">
           <div class="col s12">
             <div class="card-panel">
               <h4>Projects:</h4>
               <div class="row">
                 <div id="projects" class="col s12 center">
-                  <!-- project-entry /card -->
-                  <!-- main image /card-image -->
-                  <!-- title /card-content -->
-                  <!-- links /card-action -->
+                  <!-- project-entry-->
+                  <!-- main image-->
+                  <!-- title-->
+                  <!-- links-->
                   <!-- project title /card-reveal -->
                   <!-- project description /card-reveal -->
                     <!-- additional images as thumbnails -->
@@ -119,14 +119,62 @@
       </div><!-- /.col s10-->
     </div><!-- /.row -->
 <!--################################### EDUCATION ###########################-->
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
+    <div class="row" id="education-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image">
+            <i class="material-icons medium">school</i>
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Education:</h4>
+              <div id="education">
+                <!-- education-entry -->
+                  <!-- school name - degree / link  //=> location -->
+                  <!-- date  -->
+                  <!-- major-->
+                <!-- education-entry online course-->
+                  <!-- Name - School / link -->
+                  <!-- Date -->
+              </div><!-- /#education -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12 -->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 -->
+    </div><!--/.row #education-section -->
+
+
+<!--################################### MAP ################################-->
+    <div class="row" id="map-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image">
+            <i class="material-icons medium">my_location</i>
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Where I've Lived and Worked:</h4>
+              <div id="add-map">
+
+              </div><!-- /#add-map -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12 -->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 -->
+    </div><!--/.row #education-section -->
   </main>
 
+<!--################################### FOOTER #############################-->
   <div class="container">
     <footer id="lets-connect" class="card-panel">
       <ul id="footerContacts" class="center">
@@ -150,13 +198,13 @@
       document.getElementById('projects-section').style.display = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education-section').style.display = 'none';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('lets-connect').style.display = 'none';
     }
     if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('map-section').style.display = 'none';
     }
   </script>
 

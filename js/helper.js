@@ -32,26 +32,17 @@ var HTMLprojectSource = '<div class="card-action"><a href="%data%">Source Code</
 var HTMLprojectDemo = '<a href="%data%">Demo</a></div>';
 var HTMLprojectThumbnails = '<img class="thumbnails" src="%data%">'
 
-
-
-
-
-
-
-
-
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolName = '<div class="row no-padding"><div class="col s6 left-align"><a href="#">%data%';
+var HTMLschoolDegree = ' - %data%</a></div>'
+var HTMLschoolLocation = '<div class="col s6 right-align"><p class="no-padding">%data%</p></div></div>';
+var HTMLschoolDates = '<div class="row"><div class="col s12"><p class="no-padding">%data%</p>';
+var HTMLschoolMajor = '<p class="no-padding">Major: %data%</p></div></div>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
+var HTMLonlineClasses = '<h5>Online Classes</h5>';
+var HTMLonlineTitle = '<div class="row"><div class="col s12"><a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text-online">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineDates = '<p class="no-padding">%data%</p></div></div>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
@@ -109,7 +100,7 @@ function initializeMap() {
 
   /*
   For the map to be displayed, the googleMap var must be
-  appended to #mapDiv in resumeBuilder.js.
+  appended to #map-section in resumeBuilder.js.
   */
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
 

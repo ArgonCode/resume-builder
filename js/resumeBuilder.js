@@ -112,23 +112,23 @@ education.display = function() {
 
       var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
       formattedSchoolName = formattedSchoolName.replace("#", education.schools[school].url);
-
       var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-      var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
       var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+
+      var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
       var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 
-      var schoolNameDegree = formattedSchoolName + formattedSchoolDegree;
+      // join sections
+      var formattedSchoolNameDegreeLocation = formattedSchoolName + formattedSchoolDegree + formattedSchoolLocation;
+      var formattedDateMajor = formattedSchoolDates + formattedSchoolMajor;
 
-      $(".education-entry:last").append(schoolNameDegree);
-      $(".education-entry:last").append(formattedSchoolDates);
-      $(".education-entry:last").append(formattedSchoolLocation);
-      $(".education-entry:last").append(formattedSchoolMajor);
+      $(".education-entry:last").append(formattedSchoolNameDegreeLocation);
+      $(".education-entry:last").append(formattedDateMajor);
     }
   }
 
   // Online courses
-  if (education.onlineCourses.length >0) {
+  if (education.onlineCourses.length > 0) {
     $("#education").append(HTMLonlineClasses);
 
     for(var course = 0; course < education.onlineCourses.length; course++) {
@@ -139,23 +139,22 @@ education.display = function() {
       var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
       var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 
-      var onlineTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
+      var onlineOnlineCourse = formattedOnlineTitle + formattedOnlineSchool + formattedOnlineDates;
 
-      $(".education-entry:last").append(onlineTitleSchool);
-      $(".education-entry:last").append(formattedOnlineDates);
+      $(".education-entry:last").append(onlineOnlineCourse);
     }
   }
 }
 
 
 // Turn on Google Map *******************************************
-// $("#mapDiv").append(googleMap);
+$("#add-map").append(googleMap);
 
 
 // Call all display functions in any order **********************
 projects.display();
 work.display();
-// education.display();
+education.display();
 bio.display();
 
 // Log user clicks **********************************************
