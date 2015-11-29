@@ -1,73 +1,213 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume</title>
 
   <!-- styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css" >
 
   <!-- scripts -->
-  <script src="js/jQuery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places" type="text/javascript"></script>
   <script src="js/helper.js"></script>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
 </head>
-
 <body>
+  <main class="container">
+<!--################################### BIO DATA ###########################-->
+    <div class="row" id="bio-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image" id="image">
+            <!-- RB: image -->
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10 center">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <div id="header">
+                <!-- RB: name -->
+                <!-- RB: position -->
+                <ul id="contacts-top" class="center">
+                  <!-- RB: contact details -->
+                </ul>
+                <hr class="hr-header"/>
+                <div class="row">
+                  <div class="col s5 left-align" id="skill-list">
+                    <!-- RB: list of skills -->
+                  </div>
+                  <div class="col s7 right-align" id="welcome">
+                    <!-- RB: welcome message -->
+                  </div>
+                </div>
+              </div><!-- /.header -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12-->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 center-->
+    </div><!-- /.row -->
+
+<!--################################### WORK  ##############################-->
+    <div class="row" id="work-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image">
+            <i class="material-icons orange600 medium">work</i>
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Work Experience:</h4>
+              <div id="workExperiance">
+                <!--  6col div with Emplyer - Title -->
+                <!--  6col div with Location - Dates -->
+                <!-- 12col div with Description -->
+              </div><!-- /#workExperiance -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12 -->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 -->
+    </div><!--/.row #work-section -->
+
+
+<!--################################### PROJECTS ###########################-->
+    <div class="row" id="projects-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image">
+            <i class="material-icons orange600 medium">format_align_left</i>
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Projects:</h4>
+              <div class="row">
+                <div id="projects" class="col s12 center">
+                  <!-- project-entry-->
+                  <!-- main image-->
+                  <!-- title-->
+                  <!-- links-->
+                  <!-- project title /card-reveal -->
+                  <!-- project description /card-reveal -->
+                    <!-- additional images as thumbnails -->
+                </div><!-- /.col s12 project-entry center-->
+              </div><!-- /.row -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12-->
+        </div><!-- /.row -->
+      </div><!-- /.col s10-->
+    </div><!-- /.row -->
+<!--################################### EDUCATION ###########################-->
+    <div class="row" id="education-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image">
+            <i class="material-icons orange600 medium">school</i>
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Education:</h4>
+              <div id="education">
+                <!-- education-entry -->
+                  <!-- school name - degree / link  //=> location -->
+                  <!-- date  -->
+                  <!-- major-->
+                <!-- education-entry online course-->
+                  <!-- Name - School / link -->
+                  <!-- Date -->
+              </div><!-- /#education -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12 -->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 -->
+    </div><!--/.row #education-section -->
+
+
+<!--################################### MAP ################################-->
+    <div class="row" id="map-section">
+      <div class="col hide-on-small-only m2 center">
+        <div class="card-panel">
+          <div class="card-image">
+            <i class="material-icons orange600 medium">my_location</i>
+          </div>
+        </div><!-- /.card-panel -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m10">
+        <div class="row">
+          <div class="col s12">
+            <div class="card-panel">
+              <h4>Where I've Lived and Worked:</h4>
+              <div id="add-map">
+
+              </div><!-- /#add-map -->
+            </div><!-- /.card-panel -->
+          </div><!-- /.col s12 -->
+        </div><!-- /.row -->
+      </div><!-- /.col s10 -->
+    </div><!--/.row #education-section -->
+  </main>
+
+
+<!--################################### FOOTER #############################-->
   <div class="container">
-  <div id="main">
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-      <hr/>
-    </div>
-    <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="orange center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
+    <footer id="footer-connect" class="card-panel">
+      <ul id="contacts-footer" class="center">
+      <!-- contact list -->
       </ul>
-    </div>
-  </div>
+    </footer>
   </div>
 
+
+<!--############################# ADD / HIDE sections #######################-->
   <script src="js/resumeData.js"></script>
   <script src="js/resumeBuilder.js"></script>
   <script type="text/javascript">
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
+    if(document.getElementsByTagName('h2').length === 0) {
+      document.getElementById('bio-section').style.display = 'none';
     }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
+    if(document.getElementsByClassName('skill').length === 0) {
+      document.getElementById('skill-list').style.display = 'none';
+      document.getElementById("welcome").className = "col s12 center";
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('work-section').style.display = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects-section').style.display = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education-section').style.display = 'none';
     }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
+    if(document.getElementById('skills').length === 0) {
+      document.getElementById('footer-connect').style.display = 'none';
     }
     if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('map-section').style.display = 'none';
     }
   </script>
+
 </body>
 </html>

@@ -185,14 +185,14 @@ span {
   padding: 5px;
 }
 
-#lets-connect {
+#footer-connect {
   text-align: center;
 }
 
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
+  #footer-connect {
     margin-top: 5%;
   }
 }
@@ -204,7 +204,7 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
+  #footer-connect {
     margin-top: 10%;
   }
   .biopic {

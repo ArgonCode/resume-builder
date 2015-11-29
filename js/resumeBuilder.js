@@ -1,3 +1,16 @@
+// Page setup
+setup.display = function() {
+  if(setup.title.length > 0) {
+    var pageTitle = setup.title;
+    $(document).ready(function () {
+      document.title = pageTitle;
+    });
+  }
+};
+
+setup.display();
+
+
 // Add information to Bio ***************************************
 bio.display = function() {
   // Add picture
@@ -14,25 +27,34 @@ bio.display = function() {
   $("#welcome").append(formattedWelcomeMessage);
 
   // Add contact details
+  // Two places: email-display, and mailto:
   var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+  formattedTwitter = formattedTwitter.replace("%data%", bio.contacts.twitter);
   var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-  var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+  formattedGithub = formattedGithub.replace("%data%", bio.contacts.github);
   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+  formattedEmail = formattedEmail.replace("%data%", bio.contacts.email);
+
+  // one place
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+  var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+  var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
 
   // add contact details to the header
-  $("#topContacts").prepend(formattedMobile);
-  $("#topContacts").prepend(formattedEmail);
-  $("#topContacts").prepend(formattedLocation);
-  $("#topContacts").prepend(formattedGithub);
-  $("#topContacts").prepend(formattedTwitter);
+  $("#contacts-top").prepend(formattedMobile);
+  $("#contacts-top").prepend(formattedEmail);
+  $("#contacts-top").prepend(formattedLocation);
+  $("#contacts-top").prepend(formattedBlog);
+  $("#contacts-top").prepend(formattedGithub);
+  $("#contacts-top").prepend(formattedTwitter);
 
   // add contact details to the footer
-  $("#footerContacts").prepend(formattedMobile);
-  $("#footerContacts").prepend(formattedEmail);
-  $("#footerContacts").prepend(formattedLocation);
-  $("#footerContacts").prepend(formattedGithub);
-  $("#footerContacts").prepend(formattedTwitter);
+  $("#contacts-footer").prepend(formattedMobile);
+  $("#contacts-footer").prepend(formattedEmail);
+  $("#contacts-footer").prepend(formattedLocation);
+  $("#contacts-footer").prepend(formattedBlog);
+  $("#contacts-footer").prepend(formattedGithub);
+  $("#contacts-footer").prepend(formattedTwitter);
 
   // Add skills list tags
   $("#skill-list").append(HTMLskillsStart);

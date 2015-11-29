@@ -1,20 +1,19 @@
 var HTMLheaderName = '<h2 id="name">%data%</h2>';
-var HTMLheaderRole = '<span>%data%</span><hr id="hr-header">';
+var HTMLheaderRole = '<span>%data%</span><hr class="hr-header">';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="black-text">%contact%</span><span class="blue-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="black-text">mobile </span><span class="blue-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="black-text">email </span><span class="blue-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="black-text">twitter </span><span class="blue-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><a class="fa fa-github contact-links" href="https://github.com/%data%"><span class="blue-text">github</span></a></li>';
-var HTMLblog = '<li class="flex-item"><span class="black-text">blog </span><span class="blue-text"><a href="">%data%</a></span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="black-text">location </span><span class="blue-text">%data%</span></li>';
-
+var HTMLcontactGeneric = '<li><a class="fa fa-github">%contact%<span class="links-text">%data%</span></li>';
+var HTMLmobile = '<li><i class="fa fa-mobile fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></li>';
+var HTMLemail = '<li><a href="mailto:%data%"> <i class="fa fa-envelope fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
+var HTMLtwitter = '<li><a href="https://twitter.com/%data%"> <i class="fa fa-twitter fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
+var HTMLgithub = '<li><a href="https://github.com/%data%"> <i class="fa fa-github fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
+var HTMLblog = '<li><a href="%data%"> <i class="fa fa-file-text fa-lg bg-h-ico"><span class="links-text"> blog</span></i></a></li>';
+var HTMLlocation = '<li><a href="#map-section"> <i class="fa fa-map fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
 
 var HTMLbioPic = '<img class="responsive-img materialboxed" src="%data%">';
-var HTMLwelcomeMsg = '<p>%data%</p>';
+var HTMLwelcomeMsg = '<p class="welcome-message">%data%</p>';
 
 var HTMLskillsStart = '<h4 id="skills-h4">Skills at a Glance:</h4><ul id="skills"></ul>';
-var HTMLskills = '<li class="flex-item">%data%</li>';
+var HTMLskills = '<li class="skill">%data%</li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<div class="row no-padding"><div class="col s6 left-align"><a href="#">%data%';
@@ -39,7 +38,7 @@ var HTMLschoolLocation = '<div class="col s6 right-align"><p class="no-padding">
 var HTMLschoolDates = '<div class="row"><div class="col s12"><p class="no-padding">%data%</p>';
 var HTMLschoolMajor = '<p class="no-padding">Major: %data%</p></div></div>';
 
-var HTMLonlineClasses = '<h5>Online Classes</h5>';
+var HTMLonlineClasses = '<h5>Online Classes:</h5>';
 var HTMLonlineTitle = '<div class="row"><div class="col s12"><a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<p class="no-padding">%data%</p></div></div>';
@@ -128,6 +127,11 @@ function initializeMap() {
     for (var job in work.jobs) {
       locations.push(work.jobs[job].location);
     }
+
+    for (var location in setup.extraLocations) {
+      locations.push(setup.extraLocations[location]);
+    }
+
     return locations;
   }
 
