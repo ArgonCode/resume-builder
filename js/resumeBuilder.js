@@ -8,8 +8,6 @@ setup.display = function() {
   }
 };
 
-setup.display();
-
 
 // Add information to Bio ***************************************
 bio.display = function() {
@@ -39,8 +37,10 @@ bio.display = function() {
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
   var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
   var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
+  var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
 
   // add contact details to the header
+  $("#contacts-top").prepend(formattedLinkedin);
   $("#contacts-top").prepend(formattedMobile);
   $("#contacts-top").prepend(formattedEmail);
   $("#contacts-top").prepend(formattedLocation);
@@ -48,7 +48,9 @@ bio.display = function() {
   $("#contacts-top").prepend(formattedGithub);
   $("#contacts-top").prepend(formattedTwitter);
 
+
   // add contact details to the footer
+  $("#contacts-footer").prepend(formattedLinkedin);
   $("#contacts-footer").prepend(formattedMobile);
   $("#contacts-footer").prepend(formattedEmail);
   $("#contacts-footer").prepend(formattedLocation);
@@ -61,7 +63,7 @@ bio.display = function() {
 
   // and populate skills
   if(bio.skills.length > 0) {
-    for(var skill=0; skill < bio.skills.length; skill++) {
+    for(var skill = 0; skill < bio.skills.length; skill++) {
       var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
       $("#skills").append(formattedSkill);
     }
@@ -71,7 +73,7 @@ bio.display = function() {
 
 // Add infomation to Work Experiance ****************************
 work.display = function() {
-  for(var job in work.jobs) {
+  for(var job = 0; job < work.jobs.length; job++) {
     $("#workExperiance").append(HTMLworkStart);
 
     var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -79,6 +81,10 @@ work.display = function() {
     var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
     var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
     var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+
+    if(work.jobs[job].url.length > 0) {
+      formattedEmployer = formattedEmployer.replace("#map-section", work.jobs[job].url);
+    }
 
     var employerTitleLocation = formattedEmployer + formattedTitle + formattedLocation;
     var employerDatesDescription = formattedDates + formattedDescription;
@@ -178,9 +184,4 @@ projects.display();
 work.display();
 education.display();
 bio.display();
-
-
-// Log user clicks **********************************************
-$(document).click(function(loc) {
-  console.log(logClicks(loc.pageX, loc.pageY));
-});
+setup.display();

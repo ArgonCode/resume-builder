@@ -5,9 +5,11 @@ var HTMLcontactGeneric = '<li><a class="fa fa-github">%contact%<span class="link
 var HTMLmobile = '<li><i class="fa fa-mobile fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></li>';
 var HTMLemail = '<li><a href="mailto:%data%"> <i class="fa fa-envelope fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
 var HTMLtwitter = '<li><a href="https://twitter.com/%data%"> <i class="fa fa-twitter fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
+var HTMLlinkedin = '<li><a href="https://linkedin.com/in/%data%"> <i class="fa fa-linkedin fa-lg bg-h-ico"><span class="links-text"> linkedin</span></i></a></li>';
 var HTMLgithub = '<li><a href="https://github.com/%data%"> <i class="fa fa-github fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
 var HTMLblog = '<li><a href="%data%"> <i class="fa fa-file-text fa-lg bg-h-ico"><span class="links-text"> blog</span></i></a></li>';
 var HTMLlocation = '<li><a href="#map-section"> <i class="fa fa-map fa-lg bg-h-ico"><span class="links-text"> %data%</span></i></a></li>';
+
 
 var HTMLbioPic = '<img class="responsive-img materialboxed" src="%data%">';
 var HTMLwelcomeMsg = '<p class="welcome-message">%data%</p>';
@@ -16,7 +18,7 @@ var HTMLskillsStart = '<h4>Skills at a Glance:</h4><p id="skills"></p>';
 var HTMLskills = '<span class="skill">%data% </span>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<div class="row no-padding"><div class="col s6 left-align"><a href="#">%data%';
+var HTMLworkEmployer = '<div class="row no-padding"><div class="col s6 left-align"><a href="#map-section">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
 var HTMLworkLocation = '<div class="col s6 right-align"><p class="no-padding">%data%</p></div></div>';
 var HTMLworkDates = '<div class="row"><div class="col s12"><p class="no-padding">%data%</p>';
@@ -73,9 +75,8 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+  logClicks(loc.pageX, loc.pageY);
 });
-
 
 
 /*
@@ -128,6 +129,9 @@ function initializeMap() {
       locations.push(work.jobs[job].location);
     }
 
+
+    // iterates through additional locations and appends each location to
+    // the locations array
     for (var location in setup.extraLocations) {
       locations.push(setup.extraLocations[location]);
     }
