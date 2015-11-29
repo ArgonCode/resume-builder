@@ -2,10 +2,10 @@ TODO features:
 
 ### v0
 1. Change design of the website = use materialize
-  * design how you want it to look
-  * create wireframe
+  * [x] design how you want it to look
+  * [x] create wireframe
   * pick colors
-  * use materialize
+  * [x] use materialize
   * use scss for style rules
 2. [x] Separate resumeBuilder from resumeData.
 3. [x] Change for-in for normal for loops.
@@ -13,7 +13,7 @@ TODO features:
 5. Customize info window
 6. Make contact data clickable
 7. Get layout with columns
-  * disappear side photos on small screen
+  * [x] disappear side photos on small screen
 8. Link to gist JSON file and use it to populate the website on the fly. With a few diff examples.
 9. [x]. FIX columns and rows in work entry.
   * [x] rozpisz je jak maja wygladac, i po kawalku wklej jedno za drugim do placeholders.

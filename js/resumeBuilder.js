@@ -157,6 +157,7 @@ work.display();
 education.display();
 bio.display();
 
+
 // Log user clicks **********************************************
 $(document).click(function(loc) {
   console.log(logClicks(loc.pageX, loc.pageY));
