@@ -101,7 +101,7 @@ var projects = {
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. <br> Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus.",
       "images": ["images/resume-builder.png", "images/fake-project1-1.jpg"],
       "source": "http://www.example.com",
-      "demo": "http://www.example.com"
+      "demo": "http://www.static.argoncode.com/resume-builder/materialize/"
     },
     {
       "title": "Some project",

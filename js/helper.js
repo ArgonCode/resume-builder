@@ -18,32 +18,32 @@ var HTMLskillsStart = '<h4>Skills at a Glance:</h4><p id="skills"></p>';
 var HTMLskills = '<span class="skill">%data% </span>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<div class="row no-padding"><div class="col s6 left-align"><a href="#map-section">%data%';
+var HTMLworkEmployer = '<div class="row no-pad-mar"><div class="col s6 left-align"><a href="#map-section">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
-var HTMLworkLocation = '<div class="col s6 right-align"><p class="no-padding">%data%</p></div></div>';
-var HTMLworkDates = '<div class="row"><div class="col s12"><p class="no-padding">%data%</p>';
-var HTMLworkDescription = '<p class="no-padding">%data%</p></div></div>';
+var HTMLworkLocation = '<div class="col s6 right-align"><p class="no-pad-mar">%data%</p></div></div>';
+var HTMLworkDates = '<div class="row"><div class="col s12"><p class="no-pad-mar">%data%</p>';
+var HTMLworkDescription = '<p class="no-pad-mar">%data%</p></div></div>';
 
 var HTMLprojectStart = '<div class="card hoverable medium-width project-entry"></div>';
 var HTMLprojectTitle = '<div class="card-content"><p class="card-title activator grey-text text-darken-4">%data%';
 var HTMLprojectDates = '<i class="date">%data%</i><i class="material-icons right">more_vert</i></p></div>';
-var HTMLprojectDescription = '<div class="card-reveal"><p class="card-title grey-text text-darken-4 no-padding">%data%<i class="material-icons right">close</i></p><p>%data%</p></div>';
+var HTMLprojectDescription = '<div class="card-reveal"><p class="card-title grey-text text-darken-4 no-pad-mar">%data%<i class="material-icons right">close</i></p><p>%data%</p></div>';
 var HTMLprojectImage = '<div class="card-image waves-effect waves-block waves-light"><img class="activator responsive-img" src="%data%"></div>';
 var HTMLprojectSource = '<div class="card-action"><a href="%data%">Source Code</a>';
 var HTMLprojectDemo = '<a href="%data%">Demo</a></div>';
 var HTMLprojectThumbnails = '<img class="thumbnails" src="%data%">'
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<div class="row no-padding"><div class="col s6 left-align"><a href="#">%data%';
+var HTMLschoolName = '<div class="row no-pad-mar"><div class="col s6 left-align"><a href="#">%data%';
 var HTMLschoolDegree = ' - %data%</a></div>'
-var HTMLschoolLocation = '<div class="col s6 right-align"><p class="no-padding">%data%</p></div></div>';
-var HTMLschoolDates = '<div class="row"><div class="col s12"><p class="no-padding">%data%</p>';
-var HTMLschoolMajor = '<p class="no-padding">Major: %data%</p></div></div>';
+var HTMLschoolLocation = '<div class="col s6 right-align"><p class="no-pad-mar">%data%</p></div></div>';
+var HTMLschoolDates = '<div class="row"><div class="col s12"><p class="no-pad-mar">%data%</p>';
+var HTMLschoolMajor = '<p class="no-pad-mar">Major: %data%</p></div></div>';
 
 var HTMLonlineClasses = '<h5>Online Classes:</h5>';
 var HTMLonlineTitle = '<div class="row"><div class="col s12"><a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<p class="no-padding">%data%</p></div></div>';
+var HTMLonlineDates = '<p class="no-pad-mar">%data%</p></div></div>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
