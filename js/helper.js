@@ -12,8 +12,8 @@ var HTMLlocation = '<li><a href="#map-section"> <i class="fa fa-map fa-lg bg-h-i
 var HTMLbioPic = '<img class="responsive-img materialboxed" src="%data%">';
 var HTMLwelcomeMsg = '<p class="welcome-message">%data%</p>';
 
-var HTMLskillsStart = '<h4 id="skills-h4">Skills at a Glance:</h4><ul id="skills"></ul>';
-var HTMLskills = '<li class="skill">%data%</li>';
+var HTMLskillsStart = '<h4>Skills at a Glance:</h4><p id="skills"></p>';
+var HTMLskills = '<span class="skill">%data% </span>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<div class="row no-padding"><div class="col s6 left-align"><a href="#">%data%';

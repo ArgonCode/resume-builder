@@ -22,7 +22,7 @@ var bio = {
     },
     "biopic": "images/sylwia.jpeg",
     "welcomeMessage": "Sed ut perspiciatis unde omnis iste natus error sitarchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-    "skills": ["one", "two", "HTML", "CSS", "SASS", "JavaScript", "Python", "Ruby"] // put the in order you want them listed
+    "skills": ["one", "two", "three", "HTML", "CSS", "SASS", "JavaScript", "Python", "Ruby"] // put the in order you want them listed
 };
 
 var education = {

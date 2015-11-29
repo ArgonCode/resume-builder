@@ -4,7 +4,7 @@ TODO features:
 1. Change design of the website = use materialize
   * [x] design how you want it to look
   * [x] create wireframe
-  * pick colors
+  * [x] pick colors
   * [x] use materialize
   * use scss for style rules
 2. [x] Separate resumeBuilder from resumeData.
@@ -24,6 +24,13 @@ TODO features:
 14. [x] Fix font awesome
 15. [x] Do not break contact data on white space
 16. [x] seperate display of skills and header, in javascript
+17. remove: "facebook": "", "googlePlus": "", "linkedin": "",
+18. Clean-up css files
+19. Move to SASS
+20. remove unused classes and IDs
+21. Comment resumeData
+22. Get clean JSON files
+23. Makr REAL README
 
 ### Notes on sections:
 - [x] Skills at a Glance, move to a list with comas, like a list of tools
@@ -38,4 +45,4 @@ TODO features:
 2. Include bullet points and descriptions, use JSON resume for inspiration
 
 FEATURES:
-Adding more photos requires adjusting columns ?
+[x] Adding more photos requires adjusting columns ?
