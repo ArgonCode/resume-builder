@@ -1,7 +1,4 @@
-#contacts-top li {
-  @extend %inline-list;
-}
-
+#contacts-top li,
 #contacts-footer li {
   @extend %inline-list;
 }

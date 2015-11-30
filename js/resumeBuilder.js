@@ -91,7 +91,7 @@ work.display = function() {
     $(".work-entry:last").append(employerTitleLocation);
     $(".work-entry:last").append(employerDatesDescription);
   }
-}
+};
 
 
 // Add information to Projects **********************************
@@ -100,8 +100,6 @@ projects.display = function() {
     $("#projects").append(HTMLprojectStart);
 
     var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-    var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-    var formattedTitleDates = formattedTitle + formattedDates;
 
     // Add title to description
     var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].title);
@@ -116,7 +114,7 @@ projects.display = function() {
     var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[0]);
 
     $(".project-entry:last").append(formattedImage);
-    $(".project-entry:last").append(formattedTitleDates);
+    $(".project-entry:last").append(formattedTitle);
     $(".project-entry:last").append(formattedSourceDemo);
     $(".project-entry:last").append(formattedDescription);
 
@@ -128,7 +126,7 @@ projects.display = function() {
       }
     }
   }
-}
+};
 
 
 // Add information to Education *********************************
@@ -172,7 +170,7 @@ education.display = function() {
       $(".education-entry:last").append(onlineOnlineCourse);
     }
   }
-}
+};
 
 
 // Turn on Google Map *******************************************

@@ -7,9 +7,9 @@ var HTMLemail = '<li><a href="mailto:%data%"> <i class="fa fa-envelope fa-lg con
 var HTMLtwitter = '<li><a href="https://twitter.com/%data%"> <i class="fa fa-twitter fa-lg contact-icons"><span class="contact-links-text"> %data%</span></i></a></li>';
 var HTMLlinkedin = '<li><a href="https://linkedin.com/in/%data%"> <i class="fa fa-linkedin fa-lg contact-icons"><span class="contact-links-text"> linkedin</span></i></a></li>';
 var HTMLgithub = '<li><a href="https://github.com/%data%"> <i class="fa fa-github fa-lg contact-icons"><span class="contact-links-text"> %data%</span></i></a></li>';
-var HTMLblog = '<li><a href="%data%"> <i class="fa fa-file-text fa-lg contact-icons"><span class="contact-links-text"> blog</span></i></a></li>';
+var HTMLblog = '<li><a href="%data%" target="_blank"> <i class="fa fa-file-text fa-lg contact-icons"><span class="contact-links-text"> blog</span></i></a></li>';
 var HTMLlocation = '<li><a href="#map-section"> <i class="fa fa-map fa-lg contact-icons"><span class="contact-links-text"> %data%</span></i></a></li>';
-var HTMLbioPic = '<img class="responsive-img materialboxed" src="%data%">';
+var HTMLbioPic = '<img class="responsive-img materialboxed" alt="personal photo" src="%data%">';
 
 var HTMLwelcomeMsg = '<p class="welcome-message">%data%</p>';
 var HTMLskillsStart = '<h4>Skills at a Glance:</h4><p id="skills"></p>';
@@ -23,17 +23,16 @@ var HTMLworkDates = '<div class="row"><div class="col s12"><p class="no-pad-mar"
 var HTMLworkDescription = '<p class="no-pad-mar">%data%</p></div></div>';
 
 var HTMLprojectStart = '<div class="card hoverable medium-width project-entry"></div>';
-var HTMLprojectTitle = '<div class="card-content"><p class="card-title activator grey-text text-darken-4">%data%';
-var HTMLprojectDates = '<i class="date">%data%</i><i class="material-icons right">more_vert</i></p></div>';
+var HTMLprojectTitle = '<div class="card-content"><p class="card-title activator grey-text text-darken-4">%data%<i class="material-icons right">more_vert</i></p></div>';
 var HTMLprojectDescription = '<div class="card-reveal"><p class="card-title grey-text text-darken-4 no-pad-mar">%data%<i class="material-icons right">close</i></p><p>%data%</p></div>';
-var HTMLprojectImage = '<div class="card-image waves-effect waves-block waves-light"><img class="activator responsive-img" src="%data%"></div>';
-var HTMLprojectSource = '<div class="card-action"><a href="%data%">Source Code</a>';
-var HTMLprojectDemo = '<a href="%data%">Demo</a></div>';
-var HTMLprojectThumbnails = '<img class="thumbnails" src="%data%">'
+var HTMLprojectImage = '<div class="card-image waves-effect waves-block waves-light"><img class="activator responsive-img" alt="project image" src="%data%"></div>';
+var HTMLprojectSource = '<div class="card-action"><a href="%data%" target="_blank">Source Code</a>';
+var HTMLprojectDemo = '<a href="%data%" target="_blank">Demo</a></div>';
+var HTMLprojectThumbnails = '<img class="thumbnails" alt="project thumbnail" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<div class="row no-pad-mar"><div class="col s6 left-align"><a href="#">%data%';
-var HTMLschoolDegree = ' - %data%</a></div>'
+var HTMLschoolDegree = ' - %data%</a></div>';
 var HTMLschoolLocation = '<div class="col s6 right-align"><p class="no-pad-mar">%data%</p></div></div>';
 var HTMLschoolDates = '<div class="row"><div class="col s12"><p class="no-pad-mar">%data%</p>';
 var HTMLschoolMajor = '<p class="no-pad-mar">Major: %data%</p></div></div>';

@@ -2,9 +2,11 @@ TODO features:
 
 ### v0
 5. Customize map info window
-19. Move to SASS
 20. remove unused classes and IDs
-23. Makr REAL README
+23. Make REAL README
+  * note about customization, color theme, filling in data, technologies used
+  * add options for custom text color
+  * and custom background for cards and everything else
 
 ### Notes on sections:
 - [x] Skills at a Glance, move to a list with comas, like a list of tools

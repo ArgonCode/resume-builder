@@ -2,7 +2,7 @@
 var setup = {
   "title": "Resume",
   "extraLocations": ["Vancouver, BC", "Mexico City, Mexico", "London, UK", "Stockholm, Sweden"]
-}
+};
 
 
 // Personal information
@@ -96,16 +96,14 @@ var work = {
 var projects = {
   "projects": [
     {
-      "title": "This Project",
-      "dates": " 2000-2010",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. <br> Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus.",
-      "images": ["images/resume-builder.png", "images/fake-project1-1.jpg"],
-      "source": "http://www.example.com",
+      "title": "ResumeBuilder.js",
+      "description": '<p>Built with:</p><ul><li>HTML</li><li>CSS / SCSS</li><li>Materialize Framework</li><li>JavaScript</li><li>jQuery</li></ul><p>Features:</p><ul><li>It populates data from a <a href="https://github.com/ArgonCode/resume-builder/blob/master/js/resumeDataEmpty.js">JSON file</a>.</li><li>Color scheme can be changed by editing <a href="https://github.com/ArgonCode/resume-builder/blob/master/scss/partials/_variables.scss">color variables</a>.</li><li>Work, Projects, Education, and Map sections can be easily swapped inside <a href="https://github.com/ArgonCode/resume-builder/blob/master/index.html">index.html</a>, if different order is preffered.</li><li>Each resume section can be turned on/off independently:</li></ul>',
+      "images": ["images/resume-builder.png", "images/resume-builder-thumb-1.png", "images/resume-builder-thumb-2.png"],
+      "source": "https://github.com/ArgonCode/resume-builder",
       "demo": "http://www.static.argoncode.com/resume-builder/materialize/"
     },
     {
       "title": "Some project",
-      "dates": " 03/06-2010",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
       "images": ["images/fake-project2.jpg", "images/fake-project2-1.jpg"],
       "source": "http://www.example.com",
@@ -113,7 +111,6 @@ var projects = {
     },
     {
       "title": "Project Three",
-      "dates": " March 2015",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh ligula, interdum vel sem vitae, pellentesque tristique erat. Curabitur vel ipsum sodales, maximus erat id, mattis mauris. Aliquam eget odio ullamcorper, luctus erat ut, consectetur augue. Aenean ut massa at augue sagittis pharetra in quis orci. Vestibulum consequat et leo eu pulvinar. Donec odio massa, ultrices vitae iaculis in, porttitor nec odio. Donec justo dolor, sagittis nec mauris quis, rutrum tempus sapien. Fusce lacinia mollis ex nec euismod. Cras tristique, tellus quis pretium vestibulum, metus metus dictum tortor, efficitur ornare eros sem vel tellus. Maecenas velit enim, aliquet nec dapibus semper, auctor non est. Donec congue sodales tellus, ut interdum nunc vestibulum viverra. Vestibulum mattis nulla in ligula pulvinar, eu tristique turpis aliquet. Vivamus sagittis turpis purus, rhoncus maximus nibh porttitor id.",
       "images": ["images/fake-project3.jpg", "images/fake-project3-1.jpg", "images/fake-project3-2.jpg" ],
       "source": "http://www.example.com",

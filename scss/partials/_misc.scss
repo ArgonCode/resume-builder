@@ -29,6 +29,16 @@ a {
   }
 }
 
+// Ovverride Materialize List style
+ul {
+  padding-left: 40px;
+  list-style-type: circle;
+}
+
+ul li {
+  list-style-type: inherit;
+}
+
 /* Helper classes for styling text in section*/
 .no-pad-mar {
   padding: 0;

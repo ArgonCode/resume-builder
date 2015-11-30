@@ -1,4 +1,5 @@
-#skills li, #contacts-top li, #contacts-footer li {
+#skills li, #contacts-top li,
+#contacts-footer li {
   display: inline;
   list-style-type: none;
   padding-right: 6px;
@@ -107,6 +108,13 @@ a:visited {
   color: #D19877; }
 a:hover {
   color: #F09762; }
+
+ul {
+  padding-left: 40px;
+  list-style-type: circle; }
+
+ul li {
+  list-style-type: inherit; }
 
 /* Helper classes for styling text in section*/
 .no-pad-mar {

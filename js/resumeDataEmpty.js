@@ -2,7 +2,7 @@
 var setup = {
   "title": "", // default: Resume
   "extraLocations": [] // extra locations for the map
-}
+};
 
 
 // Personal information
@@ -84,6 +84,7 @@ var work = {
       "description": "",
       "location": "",
       "url": ""
+    },
     {
       "employer": "",
       "title": "",
@@ -99,7 +100,6 @@ var projects = {
   "projects": [
     {
       "title": "", // project name
-      "dates": "", // empty string when no dates or format adding space in front of it " 2000-2010" !!!!!! It is appended after project title
       "description": "",
       "images": [], // the first image is the main image, MUST HAVE ONE!
       // other images are added to card info. If there is only one additional photo and not much text, changing thumbnail class might make it look better
@@ -109,7 +109,6 @@ var projects = {
     // add or remove additional projects objects if needed
     {
       "title": "",
-      "dates": "",
       "description": "",
       "images": [],
       "source": "",
@@ -117,7 +116,6 @@ var projects = {
     },
     {
       "title": "",
-      "dates": "",
       "description": "",
       "images": [],
       "source": "",
