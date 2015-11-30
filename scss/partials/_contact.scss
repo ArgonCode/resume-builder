@@ -1,0 +1,21 @@
+#contacts-top li {
+  @extend %inline-list;
+}
+
+#contacts-footer li {
+  @extend %inline-list;
+}
+
+.contact-icons {
+  color: $color-contact-icons;
+}
+
+.contact-links-text {
+  & {
+    color: $color-contact-text;
+  }
+
+  &:hover {
+    color: $color-contact-text-hover;
+  }
+}

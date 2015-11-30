@@ -1,0 +1,36 @@
+body {
+  background: $color-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-headings;
+}
+
+.section-icons {
+  color: $color-section-icons;
+}
+
+a {
+  &:link {
+    color: $color-link;
+  }
+
+  &:visited {
+    color: $color-link-visited;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+/* Helper classes for styling text in section*/
+.no-pad-mar {
+  padding: 0;
+  margin: 0;
+}
